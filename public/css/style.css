@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    border: 2px solid blue;
+
+}
+
+.navbar ul {
+    display: flex;
+    width: 60%;
+    /* border: 2px solid green; */
+}
+
+ul li {
+    list-style: none;
+    margin: 5px 10px;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.line {
+    height: 5px;
+    margin: 2px;
+    width: 30px;
+    background-color: white;
+}
+.ham{
+    position: absolute;
+    top: 5px;
+    right: 10%;
+    display: none;
+}
+.right-section{
+    /* border:2px solid red; */
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    /* margin: 5px 10px; */
+    padding: 10px;
+}
+.right-section form{
+    /* color: black; */
+    /* background-color: white; */
+    
+}
+
+@media only screen and (max-width: 637px) {
+    .navbar{
+        color: white;
+        /* background-color: gray; */
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid violet; */
+    }
+    .ham{
+        display: block;
+        
+    }
+    .h-nav-resp{
+        height: 40px;
+    }
+    .v-class-resp{
+        opacity:0 ;
+    }
+    .right-section{
+        /* border: 2px solid pink; */
+        justify-content: center;
+    }
+    .right-section form{
+        align-items: center;
+    }
+    .right-section .btn{
+        display: block;
+        margin: auto;
+    }
+
+}
